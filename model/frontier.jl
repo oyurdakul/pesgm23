@@ -26,8 +26,8 @@ function construct_frontier(cvar_chr_params::Vector{Float64}, cvar_dis_params::V
             close(file)
         end
     end
-    unit_revenues = OrderedDict()
-    revenues = OrderedDict()
+    unit_profits = OrderedDict()
+    profits = OrderedDict()
     for u in units
         temp = OrderedDict()
         for c in cvar_chr_params
@@ -35,9 +35,9 @@ function construct_frontier(cvar_chr_params::Vector{Float64}, cvar_dis_params::V
                 temp["CVaR chr $(c) CVaR dis $(d)"] = revenue["$(c) $(d) $(u)"] 
             end
         end
-        unit_revenues[u] = temp
+        unit_profits[u] = temp
     end
-    revenues["Revenues"]=unit_revenues
-    write("solution_files/frontier.json", revenues)
+    profits["Average total profits"]=unit_profits
+    write("solution_files/frontier.json", profits)
     return 
 end

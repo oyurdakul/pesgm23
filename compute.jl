@@ -20,8 +20,8 @@ using .StorageProblem
 price_parameter_file = "input_files/price_params.json"
 system_parameter_file = "input_files/system_params.json"
 n_scen = 100
-cvar_chr_params = [0.0, 0.25, 0.50, 0.75]
-cvar_dis_params = [0.0, 0.25, 0.50, 0.75]
+cvar_chr_params = [0.0, 0.25, 0.50, 0.75, 1.0, 1.25, 1.5, 2.0, 5.0]
+cvar_dis_params = [0.0, 0.25, 0.50, 0.75, 1.0, 1.25, 1.5, 2.0, 5.0]
 # StorageProblem.createPriceParamsFile(system_parameter_file)
 for cvar_chr in cvar_chr_params
     for cvar_dis in cvar_dis_params
