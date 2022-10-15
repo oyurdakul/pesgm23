@@ -1,0 +1,22 @@
+{
+  "Revenues": {
+    "Storage unit 1": {
+      "CVaR chr 0.0 CVaR dis 0.0": 0.0,
+      "CVaR chr 0.0 CVaR dis 0.25": 0.0,
+      "CVaR chr 0.0 CVaR dis 0.5": 0.0,
+      "CVaR chr 0.0 CVaR dis 0.75": 0.0,
+      "CVaR chr 0.25 CVaR dis 0.0": 0.0,
+      "CVaR chr 0.25 CVaR dis 0.25": 436.7507082907249,
+      "CVaR chr 0.25 CVaR dis 0.5": 508.83264027373434,
+      "CVaR chr 0.25 CVaR dis 0.75": 523.0309975035118,
+      "CVaR chr 0.5 CVaR dis 0.0": 0.0,
+      "CVaR chr 0.5 CVaR dis 0.25": 642.4619489375438,
+      "CVaR chr 0.5 CVaR dis 0.5": 873.5014165814498,
+      "CVaR chr 0.5 CVaR dis 0.75": 971.6393365839917,
+      "CVaR chr 0.75 CVaR dis 0.0": 0.0,
+      "CVaR chr 0.75 CVaR dis 0.25": 786.7427122857973,
+      "CVaR chr 0.75 CVaR dis 0.5": 1042.653772881075,
+      "CVaR chr 0.75 CVaR dis 0.75": 1262.0234803764326
+    }
+  }
+}
