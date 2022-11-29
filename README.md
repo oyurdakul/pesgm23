@@ -6,7 +6,7 @@ The online companion to the publication
 
 
 This repository contains
-1. [The historical dispatch levels](https://github.com/oyurdakul/pesgm23#empirical-records-of-storage-dispatch-decisions) of storage resources bidding in the Australian National Electricity Market over a select group of days. 
+1. [The historical dispatch levels](#empirical-records-of-storage-dispatch-decisions) of storage resources bidding in the Australian National Electricity Market over a select group of days. 
 2. [Statistical test results](#statistical-test-results-on-forecast-errors) on the distribution of the pre-dispatch price forecast errors for different look-ahead periods
 3. The [source code](/model), [input data](/input_files), and the [results](/solution_files) of the numerical studies presented in the publication
 
