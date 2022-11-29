@@ -1,0 +1,74 @@
+{
+  "Storage unit 1": {
+    "Discharging power (MW)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 6.8,
+      "time period 4": 0.0,
+      "time period 5": 0.0,
+      "time period 6": 6.8,
+      "time period 7": 0.0,
+      "time period 8": 0.0,
+      "time period 9": 0.0
+    },
+    "Charging power (MW)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 0.0,
+      "time period 4": 9.411764705882353,
+      "time period 5": 0.0,
+      "time period 6": 0.0,
+      "time period 7": 0.0,
+      "time period 8": 0.0,
+      "time period 9": 0.0
+    },
+    "Net discharging power (MW)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 6.8,
+      "time period 4": -9.411764705882353,
+      "time period 5": 0.0,
+      "time period 6": 6.8,
+      "time period 7": 0.0,
+      "time period 8": 0.0,
+      "time period 9": 0.0
+    },
+    "Stored energy (MWh)": {
+      "time period 1": 4.0,
+      "time period 2": 4.0,
+      "time period 3": 0.0,
+      "time period 4": 4.0,
+      "time period 5": 4.0,
+      "time period 6": 0.0,
+      "time period 7": 0.0,
+      "time period 8": 0.0,
+      "time period 9": 0.0
+    },
+    "Final energy (MWh)": 0.0,
+    "Hourly average cost ($)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 0.0,
+      "time period 4": 1107.7677207082086,
+      "time period 5": 0.0,
+      "time period 6": 0.0,
+      "time period 7": 0.0,
+      "time period 8": 0.0,
+      "time period 9": 0.0
+    },
+    "Hourly average revenue ($)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 1933.1398344806855,
+      "time period 4": 0.0,
+      "time period 5": 0.0,
+      "time period 6": 1906.1843998417773,
+      "time period 7": 0.0,
+      "time period 8": 0.0,
+      "time period 9": 0.0
+    },
+    "Total average cost ($)": 1107.7677207082086,
+    "Total average revenue ($)": 3839.324234322463,
+    "Total average profit ($)": 2731.556513614254
+  }
+}

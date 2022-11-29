@@ -1,0 +1,22 @@
+{
+"Parameters": {
+    "Simulation horizon (min)": 1440,
+    "Time step (min)": 30
+},
+ "Units": {
+    "Storage unit 1": 
+    {
+        "Initial energy (MWh)": 0,
+        "Minimum energy (MWh)": 0,
+        "Maximum energy (MWh)": 193.5,
+        "Minimum final energy (MWh)": 0,
+        "Maximum final energy (MWh)": 193.5,
+        "Minimum discharging power (MW)": 0,
+        "Maximum discharging power (MW)": 150,
+        "Minimum charging power (MW)": 0,
+        "Maximum charging power (MW)": 150,
+        "Efficiency": 0.85
+    }
+ }
+
+}

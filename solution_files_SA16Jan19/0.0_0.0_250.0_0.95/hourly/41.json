@@ -1,0 +1,68 @@
+{
+  "Storage unit 1": {
+    "Discharging power (MW)": {
+      "time period 1": 125.0,
+      "time period 2": 300.0,
+      "time period 3": 0.0,
+      "time period 4": 0.0,
+      "time period 5": 300.0,
+      "time period 6": 0.0,
+      "time period 7": 125.0,
+      "time period 8": 0.0
+    },
+    "Charging power (MW)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 300.0,
+      "time period 4": 288.2352941176471,
+      "time period 5": 0.0,
+      "time period 6": 0.0,
+      "time period 7": 0.0,
+      "time period 8": 0.0
+    },
+    "Net discharging power (MW)": {
+      "time period 1": 125.0,
+      "time period 2": 300.0,
+      "time period 3": -300.0,
+      "time period 4": -288.2352941176471,
+      "time period 5": 300.0,
+      "time period 6": 0.0,
+      "time period 7": 125.0,
+      "time period 8": 0.0
+    },
+    "Stored energy (MWh)": {
+      "time period 1": 176.47058823529412,
+      "time period 2": 0.0,
+      "time period 3": 127.5,
+      "time period 4": 250.0,
+      "time period 5": 73.52941176470588,
+      "time period 6": 73.52941176470588,
+      "time period 7": 0.0,
+      "time period 8": 0.0
+    },
+    "Final energy (MWh)": 0.0,
+    "Hourly average cost ($)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 35449.580932971396,
+      "time period 4": 34291.44527021832,
+      "time period 5": 0.0,
+      "time period 6": 0.0,
+      "time period 7": 0.0,
+      "time period 8": 0.0
+    },
+    "Hourly average revenue ($)": {
+      "time period 1": 28950.590384517956,
+      "time period 2": 84665.95119346622,
+      "time period 3": 0.0,
+      "time period 4": 0.0,
+      "time period 5": 80884.16519819251,
+      "time period 6": 0.0,
+      "time period 7": 33670.792455120856,
+      "time period 8": 0.0
+    },
+    "Total average cost ($)": 69741.02620318971,
+    "Total average revenue ($)": 228171.49923129755,
+    "Total average profit ($)": 158430.47302810784
+  }
+}

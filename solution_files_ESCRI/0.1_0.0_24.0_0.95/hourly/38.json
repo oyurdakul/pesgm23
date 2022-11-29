@@ -1,0 +1,86 @@
+{
+  "Storage unit 1": {
+    "Discharging power (MW)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 0.0,
+      "time period 4": 0.0,
+      "time period 5": 10.799999999999997,
+      "time period 6": 0.0,
+      "time period 7": 0.0,
+      "time period 8": 0.0,
+      "time period 9": 0.0,
+      "time period 10": 30.0,
+      "time period 11": 0.0
+    },
+    "Charging power (MW)": {
+      "time period 1": 30.0,
+      "time period 2": 11.522491349480973,
+      "time period 3": 0.0,
+      "time period 4": 0.0,
+      "time period 5": 0.0,
+      "time period 6": 0.0,
+      "time period 7": 0.0,
+      "time period 8": 0.0,
+      "time period 9": 0.0,
+      "time period 10": 0.0,
+      "time period 11": 0.0
+    },
+    "Net discharging power (MW)": {
+      "time period 1": -30.0,
+      "time period 2": -11.522491349480973,
+      "time period 3": 0.0,
+      "time period 4": 0.0,
+      "time period 5": 10.799999999999997,
+      "time period 6": 0.0,
+      "time period 7": 0.0,
+      "time period 8": 0.0,
+      "time period 9": 0.0,
+      "time period 10": 30.0,
+      "time period 11": 0.0
+    },
+    "Stored energy (MWh)": {
+      "time period 1": 19.102941176470587,
+      "time period 2": 24.0,
+      "time period 3": 24.0,
+      "time period 4": 24.0,
+      "time period 5": 17.647058823529413,
+      "time period 6": 17.647058823529413,
+      "time period 7": 17.647058823529413,
+      "time period 8": 17.647058823529413,
+      "time period 9": 17.647058823529413,
+      "time period 10": 0.0,
+      "time period 11": 0.0
+    },
+    "Final energy (MWh)": 0.0,
+    "Hourly average cost ($)": {
+      "time period 1": 4067.2416922843095,
+      "time period 2": 1718.4624852853804,
+      "time period 3": 0.0,
+      "time period 4": 0.0,
+      "time period 5": 0.0,
+      "time period 6": 0.0,
+      "time period 7": 0.0,
+      "time period 8": 0.0,
+      "time period 9": 0.0,
+      "time period 10": 0.0,
+      "time period 11": 0.0
+    },
+    "Hourly average revenue ($)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 0.0,
+      "time period 4": 0.0,
+      "time period 5": 3068.2139471349296,
+      "time period 6": 0.0,
+      "time period 7": 0.0,
+      "time period 8": 0.0,
+      "time period 9": 0.0,
+      "time period 10": 8611.787531243315,
+      "time period 11": 0.0
+    },
+    "Total average cost ($)": 5785.70417756969,
+    "Total average revenue ($)": 11680.001478378244,
+    "Total average profit ($)": 5894.297300808555
+  }
+}

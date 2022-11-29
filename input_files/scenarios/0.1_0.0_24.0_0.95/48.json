@@ -1,0 +1,626 @@
+{
+    "Parameters": {
+        "Time step (min)": 30,
+        "Problem horizon (min)": 30,
+        "Alpha chr parameter": 0.95,
+        "Scenario number": 100
+    },
+    "Units": {
+        "Storage unit 1": {
+            "Initial energy (MWh)": 0.0,
+            "Minimum energy (MWh)": 0,
+            "Maximum energy (MWh)": 24.0,
+            "Minimum final energy (MWh)": 0,
+            "Maximum final energy (MWh)": 24.0,
+            "Minimum discharging power (MW)": 0,
+            "Maximum discharging power (MW)": 30,
+            "Minimum charging power (MW)": 0,
+            "Maximum charging power (MW)": 30,
+            "Efficiency": 0.85
+        }
+    },
+    "CVaR chr constraint parameter": 0.1,
+    "CVaR dis constraint parameter": 0.0,
+    "Prices": {
+        "s1": {
+            "Price ($/MWh)": [
+                269.6499694824219
+            ],
+            "Probability": 0.01
+        },
+        "s2": {
+            "Price ($/MWh)": [
+                220.48000000000002
+            ],
+            "Probability": 0.01
+        },
+        "s3": {
+            "Price ($/MWh)": [
+                288.11
+            ],
+            "Probability": 0.01
+        },
+        "s4": {
+            "Price ($/MWh)": [
+                243.0199923706055
+            ],
+            "Probability": 0.01
+        },
+        "s5": {
+            "Price ($/MWh)": [
+                258.97
+            ],
+            "Probability": 0.01
+        },
+        "s6": {
+            "Price ($/MWh)": [
+                258.7138400268555
+            ],
+            "Probability": 0.01
+        },
+        "s7": {
+            "Price ($/MWh)": [
+                127.19000000000003
+            ],
+            "Probability": 0.01
+        },
+        "s8": {
+            "Price ($/MWh)": [
+                375.96650726318364
+            ],
+            "Probability": 0.01
+        },
+        "s9": {
+            "Price ($/MWh)": [
+                264.3018601989746
+            ],
+            "Probability": 0.01
+        },
+        "s10": {
+            "Price ($/MWh)": [
+                264.09996185302737
+            ],
+            "Probability": 0.01
+        },
+        "s11": {
+            "Price ($/MWh)": [
+                265.5324981689453
+            ],
+            "Probability": 0.01
+        },
+        "s12": {
+            "Price ($/MWh)": [
+                267.73903076171877
+            ],
+            "Probability": 0.01
+        },
+        "s13": {
+            "Price ($/MWh)": [
+                254.99
+            ],
+            "Probability": 0.01
+        },
+        "s14": {
+            "Price ($/MWh)": [
+                265.61813003540044
+            ],
+            "Probability": 0.01
+        },
+        "s15": {
+            "Price ($/MWh)": [
+                260.53000091552735
+            ],
+            "Probability": 0.01
+        },
+        "s16": {
+            "Price ($/MWh)": [
+                264.50276000976567
+            ],
+            "Probability": 0.01
+        },
+        "s17": {
+            "Price ($/MWh)": [
+                259.2727182006836
+            ],
+            "Probability": 0.01
+        },
+        "s18": {
+            "Price ($/MWh)": [
+                275.17150695800785
+            ],
+            "Probability": 0.01
+        },
+        "s19": {
+            "Price ($/MWh)": [
+                265.1201107788086
+            ],
+            "Probability": 0.01
+        },
+        "s20": {
+            "Price ($/MWh)": [
+                268.3772369384766
+            ],
+            "Probability": 0.01
+        },
+        "s21": {
+            "Price ($/MWh)": [
+                242.26725921630862
+            ],
+            "Probability": 0.01
+        },
+        "s22": {
+            "Price ($/MWh)": [
+                260.62925109863284
+            ],
+            "Probability": 0.01
+        },
+        "s23": {
+            "Price ($/MWh)": [
+                260.21280059814455
+            ],
+            "Probability": 0.01
+        },
+        "s24": {
+            "Price ($/MWh)": [
+                274.02607040405275
+            ],
+            "Probability": 0.01
+        },
+        "s25": {
+            "Price ($/MWh)": [
+                261.5143997192383
+            ],
+            "Probability": 0.01
+        },
+        "s26": {
+            "Price ($/MWh)": [
+                263.51999908447266
+            ],
+            "Probability": 0.01
+        },
+        "s27": {
+            "Price ($/MWh)": [
+                280.7922311401367
+            ],
+            "Probability": 0.01
+        },
+        "s28": {
+            "Price ($/MWh)": [
+                143.69999991416933
+            ],
+            "Probability": 0.01
+        },
+        "s29": {
+            "Price ($/MWh)": [
+                256.1366394042969
+            ],
+            "Probability": 0.01
+        },
+        "s30": {
+            "Price ($/MWh)": [
+                147.9368090820313
+            ],
+            "Probability": 0.01
+        },
+        "s31": {
+            "Price ($/MWh)": [
+                262.6564669799805
+            ],
+            "Probability": 0.01
+        },
+        "s32": {
+            "Price ($/MWh)": [
+                275.0782867431641
+            ],
+            "Probability": 0.01
+        },
+        "s33": {
+            "Price ($/MWh)": [
+                275.09919982910156
+            ],
+            "Probability": 0.01
+        },
+        "s34": {
+            "Price ($/MWh)": [
+                271.2319515991211
+            ],
+            "Probability": 0.01
+        },
+        "s35": {
+            "Price ($/MWh)": [
+                256.93
+            ],
+            "Probability": 0.01
+        },
+        "s36": {
+            "Price ($/MWh)": [
+                259.65736145019537
+            ],
+            "Probability": 0.01
+        },
+        "s37": {
+            "Price ($/MWh)": [
+                268.82487304687504
+            ],
+            "Probability": 0.01
+        },
+        "s38": {
+            "Price ($/MWh)": [
+                265.8497900000017
+            ],
+            "Probability": 0.01
+        },
+        "s39": {
+            "Price ($/MWh)": [
+                261.2419888305664
+            ],
+            "Probability": 0.01
+        },
+        "s40": {
+            "Price ($/MWh)": [
+                275.26951828002933
+            ],
+            "Probability": 0.01
+        },
+        "s41": {
+            "Price ($/MWh)": [
+                268.08646759033206
+            ],
+            "Probability": 0.01
+        },
+        "s42": {
+            "Price ($/MWh)": [
+                255.69000213623048
+            ],
+            "Probability": 0.01
+        },
+        "s43": {
+            "Price ($/MWh)": [
+                256.2269711303711
+            ],
+            "Probability": 0.01
+        },
+        "s44": {
+            "Price ($/MWh)": [
+                263.63
+            ],
+            "Probability": 0.01
+        },
+        "s45": {
+            "Price ($/MWh)": [
+                275.49416961669925
+            ],
+            "Probability": 0.01
+        },
+        "s46": {
+            "Price ($/MWh)": [
+                258.70193634033205
+            ],
+            "Probability": 0.01
+        },
+        "s47": {
+            "Price ($/MWh)": [
+                280.23013092041015
+            ],
+            "Probability": 0.01
+        },
+        "s48": {
+            "Price ($/MWh)": [
+                273.41999786376954
+            ],
+            "Probability": 0.01
+        },
+        "s49": {
+            "Price ($/MWh)": [
+                246.90998352050784
+            ],
+            "Probability": 0.01
+        },
+        "s50": {
+            "Price ($/MWh)": [
+                263.8018835449219
+            ],
+            "Probability": 0.01
+        },
+        "s51": {
+            "Price ($/MWh)": [
+                282.5953964233399
+            ],
+            "Probability": 0.01
+        },
+        "s52": {
+            "Price ($/MWh)": [
+                284.2193084716797
+            ],
+            "Probability": 0.01
+        },
+        "s53": {
+            "Price ($/MWh)": [
+                254.99697235107425
+            ],
+            "Probability": 0.01
+        },
+        "s54": {
+            "Price ($/MWh)": [
+                80.48857696533207
+            ],
+            "Probability": 0.01
+        },
+        "s55": {
+            "Price ($/MWh)": [
+                290.21000000000004
+            ],
+            "Probability": 0.01
+        },
+        "s56": {
+            "Price ($/MWh)": [
+                284.7961299133301
+            ],
+            "Probability": 0.01
+        },
+        "s57": {
+            "Price ($/MWh)": [
+                261.7422290039063
+            ],
+            "Probability": 0.01
+        },
+        "s58": {
+            "Price ($/MWh)": [
+                258.12168670654296
+            ],
+            "Probability": 0.01
+        },
+        "s59": {
+            "Price ($/MWh)": [
+                273.8
+            ],
+            "Probability": 0.01
+        },
+        "s60": {
+            "Price ($/MWh)": [
+                269.43000762939454
+            ],
+            "Probability": 0.01
+        },
+        "s61": {
+            "Price ($/MWh)": [
+                91.27449676513675
+            ],
+            "Probability": 0.01
+        },
+        "s62": {
+            "Price ($/MWh)": [
+                248.20999908447268
+            ],
+            "Probability": 0.01
+        },
+        "s63": {
+            "Price ($/MWh)": [
+                97.79479949951175
+            ],
+            "Probability": 0.01
+        },
+        "s64": {
+            "Price ($/MWh)": [
+                259.6800686645508
+            ],
+            "Probability": 0.01
+        },
+        "s65": {
+            "Price ($/MWh)": [
+                254.25045684814455
+            ],
+            "Probability": 0.01
+        },
+        "s66": {
+            "Price ($/MWh)": [
+                267.81879028320316
+            ],
+            "Probability": 0.01
+        },
+        "s67": {
+            "Price ($/MWh)": [
+                270.97171875000004
+            ],
+            "Probability": 0.01
+        },
+        "s68": {
+            "Price ($/MWh)": [
+                246.3988467407227
+            ],
+            "Probability": 0.01
+        },
+        "s69": {
+            "Price ($/MWh)": [
+                272.9734976196289
+            ],
+            "Probability": 0.01
+        },
+        "s70": {
+            "Price ($/MWh)": [
+                246.18875915527346
+            ],
+            "Probability": 0.01
+        },
+        "s71": {
+            "Price ($/MWh)": [
+                252.81339874267582
+            ],
+            "Probability": 0.01
+        },
+        "s72": {
+            "Price ($/MWh)": [
+                259.68911712646485
+            ],
+            "Probability": 0.01
+        },
+        "s73": {
+            "Price ($/MWh)": [
+                244.75396881103518
+            ],
+            "Probability": 0.01
+        },
+        "s74": {
+            "Price ($/MWh)": [
+                273.34790832519536
+            ],
+            "Probability": 0.01
+        },
+        "s75": {
+            "Price ($/MWh)": [
+                258.273698425293
+            ],
+            "Probability": 0.01
+        },
+        "s76": {
+            "Price ($/MWh)": [
+                273.1063105773926
+            ],
+            "Probability": 0.01
+        },
+        "s77": {
+            "Price ($/MWh)": [
+                267.7522903442383
+            ],
+            "Probability": 0.01
+        },
+        "s78": {
+            "Price ($/MWh)": [
+                100.34348632812501
+            ],
+            "Probability": 0.01
+        },
+        "s79": {
+            "Price ($/MWh)": [
+                226.87998474121096
+            ],
+            "Probability": 0.01
+        },
+        "s80": {
+            "Price ($/MWh)": [
+                260.71286849975587
+            ],
+            "Probability": 0.01
+        },
+        "s81": {
+            "Price ($/MWh)": [
+                258.27025177001957
+            ],
+            "Probability": 0.01
+        },
+        "s82": {
+            "Price ($/MWh)": [
+                268.0387004852295
+            ],
+            "Probability": 0.01
+        },
+        "s83": {
+            "Price ($/MWh)": [
+                265.8499969482422
+            ],
+            "Probability": 0.01
+        },
+        "s84": {
+            "Price ($/MWh)": [
+                274.61
+            ],
+            "Probability": 0.01
+        },
+        "s85": {
+            "Price ($/MWh)": [
+                261.34696197509766
+            ],
+            "Probability": 0.01
+        },
+        "s86": {
+            "Price ($/MWh)": [
+                266.0998910522461
+            ],
+            "Probability": 0.01
+        },
+        "s87": {
+            "Price ($/MWh)": [
+                265.42285888671876
+            ],
+            "Probability": 0.01
+        },
+        "s88": {
+            "Price ($/MWh)": [
+                261.00597953796387
+            ],
+            "Probability": 0.01
+        },
+        "s89": {
+            "Price ($/MWh)": [
+                239.21930160522464
+            ],
+            "Probability": 0.01
+        },
+        "s90": {
+            "Price ($/MWh)": [
+                262.06
+            ],
+            "Probability": 0.01
+        },
+        "s91": {
+            "Price ($/MWh)": [
+                241.43419769287112
+            ],
+            "Probability": 0.01
+        },
+        "s92": {
+            "Price ($/MWh)": [
+                242.01000000000002
+            ],
+            "Probability": 0.01
+        },
+        "s93": {
+            "Price ($/MWh)": [
+                235.4009527587891
+            ],
+            "Probability": 0.01
+        },
+        "s94": {
+            "Price ($/MWh)": [
+                263.7540419006348
+            ],
+            "Probability": 0.01
+        },
+        "s95": {
+            "Price ($/MWh)": [
+                266.46392822265625
+            ],
+            "Probability": 0.01
+        },
+        "s96": {
+            "Price ($/MWh)": [
+                257.861950378418
+            ],
+            "Probability": 0.01
+        },
+        "s97": {
+            "Price ($/MWh)": [
+                253.98096923828126
+            ],
+            "Probability": 0.01
+        },
+        "s98": {
+            "Price ($/MWh)": [
+                224.98705169677737
+            ],
+            "Probability": 0.01
+        },
+        "s99": {
+            "Price ($/MWh)": [
+                252.23000000000002
+            ],
+            "Probability": 0.01
+        },
+        "s100": {
+            "Price ($/MWh)": [
+                265.6679376220703
+            ],
+            "Probability": 0.01
+        }
+    }
+}

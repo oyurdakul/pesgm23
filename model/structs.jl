@@ -1,6 +1,3 @@
-# UnitCommitmentSTO.jl: Optimization Package for Security-Constrained Unit Commitment
-# Copyright (C) 2020, UChicago Argonne, LLC. All rights reserved.
-# Released under the modified BSD license. See COPYING.md for more details.
 mutable struct PriceScenario
     name::String
     price::Vector{Float64}
@@ -32,7 +29,8 @@ Base.@kwdef mutable struct StorageProblemInstance
     time_multiplier::Float64
     units_by_name::Dict{AbstractString,Unit}
     units::Vector{Unit}
-    alpha::Float64
+    alpha_chr::Vector{Float64}
+    alpha_dis::Vector{Float64}
     cvar_chr_parameters::Vector{Float64}
     cvar_dis_parameters::Vector{Float64}
 end

@@ -1,0 +1,68 @@
+{
+  "Storage unit 1": {
+    "Discharging power (MW)": {
+      "time period 1": 0.0,
+      "time period 2": 300.0,
+      "time period 3": 0.0,
+      "time period 4": 0.0,
+      "time period 5": 300.0,
+      "time period 6": 0.0,
+      "time period 7": 298.4999999999999,
+      "time period 8": 0.0
+    },
+    "Charging power (MW)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 300.0,
+      "time period 4": 300.0,
+      "time period 5": 0.0,
+      "time period 6": 0.0,
+      "time period 7": 0.0,
+      "time period 8": 0.0
+    },
+    "Net discharging power (MW)": {
+      "time period 1": 0.0,
+      "time period 2": 300.0,
+      "time period 3": -300.0,
+      "time period 4": -300.0,
+      "time period 5": 300.0,
+      "time period 6": 0.0,
+      "time period 7": 298.4999999999999,
+      "time period 8": 0.0
+    },
+    "Stored energy (MWh)": {
+      "time period 1": 273.5294117647058,
+      "time period 2": 97.05882352941168,
+      "time period 3": 224.55882352941168,
+      "time period 4": 352.0588235294117,
+      "time period 5": 175.5882352941176,
+      "time period 6": 175.5882352941176,
+      "time period 7": 0.0,
+      "time period 8": 0.0
+    },
+    "Final energy (MWh)": 0.0,
+    "Hourly average cost ($)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 35449.580932971396,
+      "time period 4": 35691.09609757417,
+      "time period 5": 0.0,
+      "time period 6": 0.0,
+      "time period 7": 0.0,
+      "time period 8": 0.0
+    },
+    "Hourly average revenue ($)": {
+      "time period 1": 0.0,
+      "time period 2": 84665.95119346622,
+      "time period 3": 0.0,
+      "time period 4": 0.0,
+      "time period 5": 80884.16519819251,
+      "time period 6": 0.0,
+      "time period 7": 80405.85238282857,
+      "time period 8": 0.0
+    },
+    "Total average cost ($)": 71140.67703054557,
+    "Total average revenue ($)": 245955.9687744873,
+    "Total average profit ($)": 174815.29174394172
+  }
+}

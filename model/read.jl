@@ -1,7 +1,3 @@
-# UnitCommitmentSTO.jl: Optimization Package for Security-Constrained Unit Commitment
-# Copyright (C) 2020, UChicago Argonne, LLC. All rights reserved.
-# Released under the modified BSD license. See COPYING.md for more details.
-
 using Printf
 using JSON
 using DataStructures
@@ -31,19 +27,29 @@ function _from_json(json; repair = true)
     end
     units = Unit[]
     prices=PriceScenario[]
-    time_horizon = json["Parameters"]["Time (h)"]
-    if time_horizon === nothing
-        time_horizon = json["Parameters"]["Time horizon (min)"]
-    end
-    time_horizon !== nothing || error("Missing parameter: Time horizon (min)")
+    problem_horizon = json["Parameters"]["Problem horizon (min)"]
+    time_step = scalar(json["Parameters"]["Time step (min)"], default = 60)
+    (60 % time_step == 0) ||
+        error("Time step $time_step is not a divisor of 60")
+    T = problem_horizon ÷ time_step
     scenario_number = json["Parameters"]["Scenario number"]
     scenario_number !== nothing || error("Missing parameter: Scenario number")
     time_step = scalar(json["Parameters"]["Time step (min)"], default = 60)
     (60 % time_step == 0) ||
         error("Time step $time_step is not a divisor of 60")
     time_multiplier = time_step / 60
-    T = time_horizon ÷ time_step  
-    alpha = json["Parameters"]["alpha"]
+    alpha_chr = timeseries(
+        json["Parameters"]["Alpha chr parameter"],
+        default = [.95 for t in 1:T],
+    )
+    alpha_dis = timeseries(
+        json["Parameters"]["Alpha dis parameter"],
+        default = [.95 for t in 1:T],
+    )
+    cvar_dis_parameters = timeseries(
+        json["CVaR dis constraint parameter"],
+        default = [1.0 for t in 1:T],
+    )
     cvar_chr_parameters = timeseries(
         json["CVaR chr constraint parameter"],
         default = [1.0 for t in 1:T],
@@ -98,7 +104,8 @@ function _from_json(json; repair = true)
         time_multiplier = time_multiplier,
         units_by_name = Dict(g.name => g for g in units),
         units = units,
-        alpha = alpha,
+        alpha_chr = alpha_chr,
+        alpha_dis = alpha_dis,
         cvar_chr_parameters = cvar_chr_parameters,
         cvar_dis_parameters = cvar_dis_parameters
     )

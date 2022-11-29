@@ -1,0 +1,50 @@
+{
+  "Storage unit 1": {
+    "Discharging power (MW)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 300.0,
+      "time period 4": 300.0,
+      "time period 5": 0.0
+    },
+    "Charging power (MW)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 0.0,
+      "time period 4": 0.0,
+      "time period 5": 0.0
+    },
+    "Net discharging power (MW)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 300.0,
+      "time period 4": 300.0,
+      "time period 5": 0.0
+    },
+    "Stored energy (MWh)": {
+      "time period 1": 352.94117647058823,
+      "time period 2": 352.94117647058823,
+      "time period 3": 176.47058823529412,
+      "time period 4": 0.0,
+      "time period 5": 0.0
+    },
+    "Final energy (MWh)": 0.0,
+    "Hourly average cost ($)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 0.0,
+      "time period 4": 0.0,
+      "time period 5": 0.0
+    },
+    "Hourly average revenue ($)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 1.0848165809329713e6,
+      "time period 4": 317250.09609757416,
+      "time period 5": 0.0
+    },
+    "Total average cost ($)": 0.0,
+    "Total average revenue ($)": 1.4020666770305454e6,
+    "Total average profit ($)": 1.4020666770305454e6
+  }
+}

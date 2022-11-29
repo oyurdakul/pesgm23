@@ -1,6 +1,7 @@
 using JuMP, MathOptInterface, DataStructures
 import JuMP: value, fix, set_name
 using JSON: print
+using Gurobi
 
 function build_model(;
     instance::StorageProblemInstance,
@@ -20,6 +21,8 @@ function build_model(;
         @objective(model, Min, model[:obj])
     end
     @info @sprintf("Built model in %.2f seconds", time_model)
+    # @info "alpha chr parameter: $(instance.alpha_chr)"
+    # @info "alpha dis parameter: $(instance.alpha_dis)"
 
     return model
 end

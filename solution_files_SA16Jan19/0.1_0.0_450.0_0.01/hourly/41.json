@@ -1,0 +1,68 @@
+{
+  "Storage unit 1": {
+    "Discharging power (MW)": {
+      "time period 1": 0.0,
+      "time period 2": 300.0,
+      "time period 3": 0.0,
+      "time period 4": 0.0,
+      "time period 5": 300.0,
+      "time period 6": 0.0,
+      "time period 7": 300.0,
+      "time period 8": 0.0
+    },
+    "Charging power (MW)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 300.0,
+      "time period 4": 300.0,
+      "time period 5": 0.0,
+      "time period 6": 0.0,
+      "time period 7": 0.0,
+      "time period 8": 0.0
+    },
+    "Net discharging power (MW)": {
+      "time period 1": 0.0,
+      "time period 2": 300.0,
+      "time period 3": -300.0,
+      "time period 4": -300.0,
+      "time period 5": 300.0,
+      "time period 6": 0.0,
+      "time period 7": 300.0,
+      "time period 8": 0.0
+    },
+    "Stored energy (MWh)": {
+      "time period 1": 274.4117647058823,
+      "time period 2": 97.94117647058823,
+      "time period 3": 225.44117647058823,
+      "time period 4": 352.94117647058823,
+      "time period 5": 176.47058823529412,
+      "time period 6": 176.47058823529412,
+      "time period 7": 0.0,
+      "time period 8": 0.0
+    },
+    "Final energy (MWh)": 0.0,
+    "Hourly average cost ($)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 24234.31398010254,
+      "time period 4": 28881.466552734375,
+      "time period 5": 0.0,
+      "time period 6": 0.0,
+      "time period 7": 0.0,
+      "time period 8": 0.0
+    },
+    "Hourly average revenue ($)": {
+      "time period 1": 0.0,
+      "time period 2": 79158.00013732912,
+      "time period 3": 0.0,
+      "time period 4": 0.0,
+      "time period 5": 75185.71911621094,
+      "time period 6": 0.0,
+      "time period 7": 73445.63594055176,
+      "time period 8": 0.0
+    },
+    "Total average cost ($)": 53115.780532836914,
+    "Total average revenue ($)": 227789.3551940918,
+    "Total average profit ($)": 174673.57466125488
+  }
+}

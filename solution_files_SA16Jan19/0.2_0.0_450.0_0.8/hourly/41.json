@@ -1,0 +1,68 @@
+{
+  "Storage unit 1": {
+    "Discharging power (MW)": {
+      "time period 1": 0.0,
+      "time period 2": 300.0,
+      "time period 3": 0.0,
+      "time period 4": 0.0,
+      "time period 5": 300.0,
+      "time period 6": 0.0,
+      "time period 7": 300.0,
+      "time period 8": 0.0
+    },
+    "Charging power (MW)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 300.0,
+      "time period 4": 2.0761245674741664,
+      "time period 5": 0.0,
+      "time period 6": 0.0,
+      "time period 7": 0.0,
+      "time period 8": 0.0
+    },
+    "Net discharging power (MW)": {
+      "time period 1": 0.0,
+      "time period 2": 300.0,
+      "time period 3": -300.0,
+      "time period 4": -2.0761245674741664,
+      "time period 5": 300.0,
+      "time period 6": 0.0,
+      "time period 7": 300.0,
+      "time period 8": 0.0
+    },
+    "Stored energy (MWh)": {
+      "time period 1": 401.0294117647058,
+      "time period 2": 224.55882352941168,
+      "time period 3": 352.0588235294117,
+      "time period 4": 352.94117647058823,
+      "time period 5": 176.47058823529412,
+      "time period 6": 176.47058823529412,
+      "time period 7": 0.0,
+      "time period 8": 0.0
+    },
+    "Final energy (MWh)": 0.0,
+    "Hourly average cost ($)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 35449.580932971396,
+      "time period 4": 246.99720482751692,
+      "time period 5": 0.0,
+      "time period 6": 0.0,
+      "time period 7": 0.0,
+      "time period 8": 0.0
+    },
+    "Hourly average revenue ($)": {
+      "time period 1": 0.0,
+      "time period 2": 84665.95119346622,
+      "time period 3": 0.0,
+      "time period 4": 0.0,
+      "time period 5": 80884.16519819251,
+      "time period 6": 0.0,
+      "time period 7": 80809.90189229004,
+      "time period 8": 0.0
+    },
+    "Total average cost ($)": 35696.57813779891,
+    "Total average revenue ($)": 246360.01828394877,
+    "Total average profit ($)": 210663.44014614986
+  }
+}

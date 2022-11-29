@@ -1,0 +1,68 @@
+{
+  "Storage unit 1": {
+    "Discharging power (MW)": {
+      "time period 1": 0.0,
+      "time period 2": 300.0,
+      "time period 3": 0.0,
+      "time period 4": 0.0,
+      "time period 5": 300.0,
+      "time period 6": 0.0,
+      "time period 7": 295.0,
+      "time period 8": 0.0
+    },
+    "Charging power (MW)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 300.0,
+      "time period 4": 300.0,
+      "time period 5": 0.0,
+      "time period 6": 0.0,
+      "time period 7": 0.0,
+      "time period 8": 0.0
+    },
+    "Net discharging power (MW)": {
+      "time period 1": 0.0,
+      "time period 2": 300.0,
+      "time period 3": -300.0,
+      "time period 4": -300.0,
+      "time period 5": 300.0,
+      "time period 6": 0.0,
+      "time period 7": 295.0,
+      "time period 8": 0.0
+    },
+    "Stored energy (MWh)": {
+      "time period 1": 271.47058823529414,
+      "time period 2": 95.00000000000003,
+      "time period 3": 222.50000000000003,
+      "time period 4": 350.0,
+      "time period 5": 173.52941176470588,
+      "time period 6": 173.52941176470588,
+      "time period 7": 0.0,
+      "time period 8": 0.0
+    },
+    "Final energy (MWh)": 0.0,
+    "Hourly average cost ($)": {
+      "time period 1": 0.0,
+      "time period 2": 0.0,
+      "time period 3": 35449.580932971396,
+      "time period 4": 35691.09609757417,
+      "time period 5": 0.0,
+      "time period 6": 0.0,
+      "time period 7": 0.0,
+      "time period 8": 0.0
+    },
+    "Hourly average revenue ($)": {
+      "time period 1": 0.0,
+      "time period 2": 84665.95119346622,
+      "time period 3": 0.0,
+      "time period 4": 0.0,
+      "time period 5": 80884.16519819251,
+      "time period 6": 0.0,
+      "time period 7": 79463.07019408522,
+      "time period 8": 0.0
+    },
+    "Total average cost ($)": 71140.67703054557,
+    "Total average revenue ($)": 245013.18658574394,
+    "Total average profit ($)": 173872.50955519837
+  }
+}
