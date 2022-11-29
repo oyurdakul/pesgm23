@@ -10,8 +10,8 @@ This repository contains
 2. [Statistical test results](/pesgm23#statistical-test-results-on-forecast-errors) on the distribution of the pre-dispatch price forecast errors for different look-ahead periods
 3. The [source code](/model), [input data](/input_files), and the [results](/solution_files) of the numerical studies presented in the publication
 
-# Empirical records of storage dispatch decisions
+## Empirical records of storage dispatch decisions
 
-# Statistical test results on forecast errors
+## Statistical test results on forecast errors
 
 
