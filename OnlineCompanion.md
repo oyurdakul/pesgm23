@@ -1,4 +1,4 @@
-# Online Compantion to "Risk-Averse Self-Scheduling of Storage in Decentralized Markets" 
+# Online Companion to "Risk-Averse Self-Scheduling of Storage in Decentralized Markets" 
 The online companion to the publication
 
 > O. Yurdakul and F. Billimoria, "Risk-Averse Self-Scheduling of Storage in Decentralized Markets," 
