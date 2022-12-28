@@ -49,5 +49,6 @@ To ascertain distributional information, a set of statistical tests were conduct
 The plot below
 
 ![error_plot_1](stats/stats_24/results/plots/prob_plot0.png)
+
 *The distribution of the forecast error with respect to the theoretical quantiles of the standard normal distribution*
 
