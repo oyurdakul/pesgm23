@@ -16,18 +16,27 @@ The paper contains two case studies of storage self-commitment based on empirica
 
 ### Primary case studies
 
-1. [Victoria - 12 June 2022] 
+1. Victoria (VIC) - 12 June 2022 
 
 ![alt text](https://github.com/oyurdakul/pesgm23/blob/main/input_files/price_params/12Jun22_VIC.png?raw=true)
 
+The storage data of Case Study I uses that of the Victorian Big Battery (VBB), a grid-connected storage resource in the Australian state of Victoria with a charging/discharging power limit of 300.0 MW and an energy storage capacity of 450.0 MWh. Pre-dispatch prices in Victoria for June 12, 2022 are used, which constitutes the last day before the cumulative price threshold was exceeded in Victoria, triggering the onset of a series of market interventions that culminated in AEMO suspending the NEM on June 15, 2022. As per the empirical dispatch of the VBB on the day, it failed to discharge during a major price spike late in the trading day due to having to discharge early.
 
-2. [South Australia - 16 January 2019]
+2. South Australia (SA) - 16 January 2019
 
 ![alt text](https://github.com/oyurdakul/pesgm23/blob/main/input_files/price_params/16Jan19_SA.png?raw=true)
 
+Case Study II examines the battery dispatch for a day in which the pre-dispatch prices are highly volatile. Specifically pre-dispatch prices and dispatch are used for the 16th of January 2019 in South Australia. The case study uses storage data from that of the ESCRI storage resource, which is connected to the grid in South Australia and has a charging/discharging power limit of 30 MW and a capacity of 8 MWh.  Prices during this trading day were highly volatile, with sawtooth prices but mainly in positive territory. i.e. from positive prices to higher positive prices.
+
 ### Secondary case studies
 
-https://github.com/oyurdakul/pesgm23/blob/main/input_files/price_params/Sample_days_conf_paper.xlsx
+Additional secondary case studies of empirical battery discharge are provided at  https://github.com/oyurdakul/pesgm23/blob/main/input_files/price_params/Sample_days_conf_paper.xlsx Brief case study descriptions are provided below and comprise.
+
+4 Apr 2020 in SA - sawtooth price patterns creating difficulties in effectively scheduling storage units.
+15 Sep 20 in SA - 'duck curve' prices currently typical of South Australia with a strong evening peak. Storage units appear to have failed to dispatch ('missed the spike') during the high price period.
+21 Oct 22 in QLD - A price spike during the middle of the day which the batteries missed, because they seemed to be discharging a few periods earlier.
+10 Sep 22 in VIC - A trading day with periods of consistently flatter prices but again batteries discharged early and failed to wholly capitalize on price volatility.
+10 Aug 22 in VIC - A rare price spike during the middle of trading day during which batteries failed to dispatch. The remainder of the trading day had predominatly flat prices.
 
 ## Statistical test results on forecast errors
 
