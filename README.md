@@ -32,11 +32,15 @@ Case Study II examines the battery dispatch for a day in which the pre-dispatch 
 
 Additional secondary case studies of empirical battery discharge, illustrative of risk-averse behaviour, are set out below. The full data set is provided at  https://github.com/oyurdakul/pesgm23/blob/main/input_files/price_params/Sample_days_conf_paper.xlsx 
 
-4 Apr 2020 in SA - sawtooth price patterns creating difficulties in effectively scheduling storage units.
-15 Sep 20 in SA - 'duck curve' prices currently typical of South Australia with a strong evening peak. Storage units appear to have failed to dispatch ('missed the spike') during the high price period.
-21 Oct 22 in QLD - A price spike during the middle of the day which the batteries missed, because they seemed to be discharging a few periods earlier.
-10 Sep 22 in VIC - A trading day with periods of consistently flatter prices but again batteries discharged early and failed to wholly capitalize on price volatility.
-10 Aug 22 in VIC - A rare price spike during the middle of trading day during which batteries failed to dispatch. The remainder of the trading day had predominatly flat prices.
+3. 4 Apr 2020 in SA - sawtooth price patterns creating difficulties in effectively scheduling storage units.
+
+4. 15 Sep 20 in SA - 'duck curve' prices currently typical of South Australia with a strong evening peak. Storage units appear to have failed to dispatch ('missed the spike') during the high price period.
+
+5. 21 Oct 22 in QLD - A price spike during the middle of the day which the batteries missed, because they seemed to be discharging a few periods earlier.
+
+6. 10 Sep 22 in VIC - A trading day with periods of consistently flatter prices but again batteries discharged early and failed to wholly capitalize on price volatility.
+
+7. 10 Aug 22 in VIC - A rare price spike during the middle of trading day during which batteries failed to dispatch. The remainder of the trading day had predominatly flat prices.
 
 ## Statistical test results on forecast errors
 
