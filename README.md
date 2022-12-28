@@ -30,7 +30,7 @@ Case Study II examines the battery dispatch for a day in which the pre-dispatch 
 
 ### Secondary case studies
 
-Additional secondary case studies of empirical battery discharge, illustrative of risk-averse behaviour, are set out below. The full data set is provided at  https://github.com/oyurdakul/pesgm23/blob/main/input_files/price_params/Sample_days_conf_paper.xlsx 
+Additional secondary case studies of empirical battery discharge, illustrative of risk-averse behaviour, are set out below. The full data set is provided [here](/input_files/price_params/Sample_days_conf_paper.xlsx) 
 
 3. 4 Apr 2020 in South Australia - sawtooth price patterns creating difficulties in effectively scheduling storage units.
 
