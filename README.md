@@ -18,7 +18,7 @@ The paper contains two case studies of storage self-commitment based on empirica
 
 1. [Victoria - 12 June 2022] 
 
-![alt text](https://github.com/oyurdakul/pesgm23/blob/main/input_files/price_params/12Jun22_VIC.png)
+![alt text](https://github.com/oyurdakul/pesgm23/blob/main/input_files/price_params/12Jun22_VIC.PNG?raw=true)
 
 
 2. [South Australia - 16 January 2019]
