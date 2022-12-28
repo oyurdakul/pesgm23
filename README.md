@@ -44,4 +44,5 @@ Additional secondary case studies of empirical battery discharge, illustrative o
 
 ## Statistical test results on forecast errors
 
+To ascertain distributional information, a set of statistical tests were conducted on historical price forecast errors. Historical prices, both actual trading prices  and pre-dispatch forecast prices were sourced for the 2019 calender year extracted using NEMOSIS and NEMSEER (as above). Price forecast errors are calculated based on the methodology outlined in the manuscript.  
 
