@@ -12,6 +12,23 @@ This online companion contains
 
 ## Empirical records of storage dispatch decisions
 
+The paper contains two case studies of storage self-commitment based on empirical data from the National Electricity Market (NEM).  Below we set out the empirical records of storage dispatch decisions and prices for the trading days considered in the main manuscript (primary case studies) as well as additional case studies that are indicative of similar phenomena with respect to self-commitment of storage units in decentralized markets (additional case studies). 
+
+### Primary case studies
+
+1. [Victoria - 12 June 2022] 
+
+![alt text](https://github.com/oyurdakul/pesgm23/blob/main/input_files/price_params/12Jun22_VIC.JPG?raw=true)
+
+
+2. [South Australia - 16 January 2019]
+
+![alt text](https://github.com/oyurdakul/pesgm23/blob/main/input_files/price_params/16Jan19_SA.JPG?raw=true)
+
+### Secondary case studies
+
+https://github.com/oyurdakul/pesgm23/blob/main/input_files/price_params/Sample_days_conf_paper.xlsx
+
 ## Statistical test results on forecast errors
 
 
