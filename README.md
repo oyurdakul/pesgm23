@@ -18,13 +18,13 @@ The paper contains two case studies of storage self-commitment based on empirica
 
 1. Victoria (VIC) - 12 June 2022 
 
-![alt text](https://github.com/oyurdakul/pesgm23/blob/main/input_files/price_params/12Jun22_VIC.png?raw=true)
+![12Jun22](/input_files/price_params/12Jun22_VIC.png)
 
 The storage data of Case Study I uses that of the Victorian Big Battery (VBB), a grid-connected storage resource in the Australian state of Victoria with a charging/discharging power limit of 300.0 MW and an energy storage capacity of 450.0 MWh. Pre-dispatch prices in Victoria for June 12, 2022 are used, which constitutes the last day before the cumulative price threshold was exceeded in Victoria, triggering the onset of a series of market interventions that culminated in AEMO suspending the NEM on June 15, 2022. As per the empirical dispatch of the VBB on the day, it failed to discharge during a major price spike late in the trading day due to having to discharge early.
 
 2. South Australia (SA) - 16 January 2019
 
-![alt text](https://github.com/oyurdakul/pesgm23/blob/main/input_files/price_params/16Jan19_SA.png?raw=true)
+![16Jan19](/input_files/price_params/16Jan19_SA.png)
 
 Case Study II examines the battery dispatch for a day in which the pre-dispatch prices are highly volatile. Specifically pre-dispatch prices and dispatch are used for the 16th of January 2019 in South Australia. The case study uses storage data from that of the ESCRI storage resource, which is connected to the grid in South Australia and has a charging/discharging power limit of 30 MW and a capacity of 8 MWh.  Prices during this trading day were highly volatile, with sawtooth prices but mainly in positive territory. i.e. from positive prices to higher positive prices.
 
