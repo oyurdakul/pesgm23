@@ -46,6 +46,10 @@ Additional secondary case studies of empirical battery discharge, illustrative o
 
 To ascertain distributional information, a set of statistical tests were conducted on historical price errors (defined as the actual dispatch price minus the predispatch price, for a given horizon). Historical prices, both actual dispatch prices and pre-dispatch forecast prices were sourced for the 2019 calender year extracted using NEMOSIS and NEMSEER (as above). Price errors are calculated based on the methodology outlined in the manuscript. 
 
+The sample distribution of price error is shown below for the following horizons: 30 minutes, 6 hours, 12 hours and 24 hours. 
+
+![error mean_plot](stats/stats_24/results/plots/prob_plot0.png)
+
 The plot below shows the first moment (mean) of the error distribution. For all horizons, the results show negative means. The magnitude of the first moment are relatively small at short horizons, but increase to levels ranging from around $80-120/MWh for horizon intervals beyond 5 hours. 
 
 ![error mean_plot](stats/stats_24/results/plots/prob_plot0.png)
@@ -56,9 +60,11 @@ A range of tests have been conducted for normality.  In other words, to understa
 
 **Skew and kurtosis** - A common test of normality is to examine the third and fourth moments of the distribution (skew and kurtosis), both of which should be zero for a normal distribution. As indicated in the plots below (skew - left and kurtosis - right) the sample distribution appears negatively skewed with positive kurotisis. The negative skew of the price error is of particular interest - indicating a higher occurence of the actual price being well below predispatch prices when the latter is high.  This supports the notion that the role of predispatch is not to forecast prices, but more accurately serves as a signal of potential scarcity.  In such conditions the high predispatch price would encourage generation resource to come online, thereby depressing the actual price outturn below that signalled by predispatch. The positive kurosis indicates that the distribution may have heavy tails.         
 
-Shapiro-wilk test - a test for normality, for samples greater than 5000 we use the W statistic (rather than p-value) 
-https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.shapiro.html
-Kolmogorov-Smirnov test - which is a distribution agnostic test of the distance between the empirical and proposed distribution https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.kstest.html
+**Shapiro-Wilk test** The Shapiro-wilk test is indicator of normality in frequentist statistics (see https://en.wikipedia.org/wiki/Shapiro-Wilk_test). The plot below displays the W statistic, which is more reliable than the p-value for sample  greater than 5000 we use the W statistic (rather than p-value).  In each of the horizons, the W-statistic indicates that the null hypothesis can be rejected, is is evidence that the sample data is not normally distributed.
+
+**Kolmogorov-Smirnov test** The Kolmogorov-Smirnov test is another distribution agnostic test of the distance between the empirical and proposed distribution (see https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.kstest.html).  
+
+
 
 We also undertake probability plots to check against normality https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.probplot.html
 In each case it is apparent that the price forecast error of pre-dispatch ahead prices against real time prices is non-normal displaying notable negative skew and kurtosis.
