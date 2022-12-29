@@ -70,7 +70,11 @@ A range of tests have been conducted for normality.  In other words, to understa
 
 **Kolmogorov-Smirnov test** The Kolmogorov-Smirnov test is another distribution agnostic test of the distance between the empirical and proposed distribution (see https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.kstest.html).  Here too the test statistics indicate that the null hypothesis of normality can be rejected. 
 
-Finaly we also undertake probability plots to check against normality (available at [ ]). In each case it is apparent that the price forecast error of pre-dispatch ahead prices against real time prices is non-normal displaying notable negative skew and kurtosis. The probability plot is also instructive indicating that normality assumption breaks down particularly at the extreme quantiles.  
+![error_sw_ks_test](stats/stats_24/results/sw_ks_norm_test.png)
+
+Finaly we also undertake probability plots to check against normality (available at https://github.com/oyurdakul/pesgm23/tree/main/stats/stats_24/results/plots). In each case it is apparent that the price forecast error of pre-dispatch ahead prices against real time prices is non-normal displaying notable negative skew and kurtosis. The probability plot is also instructive indicating that normality assumption breaks down particularly at the extreme quantiles.  An example probability, for a 1 hour ahead horizon is provided below.
+
+![error_sw_ks_test](stats/stats_24/results/plots/prob_plot1.png)
 
 The overall results are not surprising for predispatch as it is actually meant as a price signal rather than a price-forecast. In other words, predispatch is intended to signal to participants how to change their behaviour - for example if predispatch prices are high, it indicates more participants should committ into the market.  Therefore even 30 mins ahead (when flexible resources can still committ) we expect there will be significant price errors, which shows out in the statistical analysis. The positive kurtosis, as indicators of heavy tails, suggest it may be easier to forecast prices most of the time, but that signifcant forecast errors are possible in the extreme.
 
