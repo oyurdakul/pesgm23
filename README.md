@@ -84,7 +84,7 @@ Tests have also been run for independence of observations as between forecast ho
 
 **Pearson and Spearman-rank correlation** matrices are provided below for forecast horizons ranging from 0.5 hrs to 24 hrs. Green indicates a correlation of 1.0, yellow indicates a correlation of 0.5 and orange indicates a correlation of 0.  The full data and f-test results are provided at the following location https://github.com/oyurdakul/pesgm23/tree/main/stats/stats_24/results. The correlation matrices for both Pearson and Spearman suggest high correlations between adjacent horizons (generally within 1-2 hours of the considered horizon). Beyond such periods, lower correlations are observed.
 
-![correlations](stats/stats_24/results/correl.png)
+![correlations](/stats/stats_24/results/correl.png)
 
 **Mutual information tests of dependency** are also conducted with similar observations (results are provided at the following location https://github.com/oyurdakul/pesgm23/tree/main/stats/stats_24/results/error_mut_info.csv) that the dependence is significant towards at closer intervals however as the interval between the predispatch horizons expand the dependency reduces.  Once again, this is not surprising because it depends upon the ahead forecasts of system conditions, which can change significantly as new information becomes available closer to time. 
 
