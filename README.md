@@ -50,6 +50,10 @@ The sample distribution of price error is shown below for the following horizons
 
 ![error mean_plot](stats/stats_24/results/plots/prob_plot0.png)
 
+The boxplot of price errors is shown below for all of the considered horizons (from 30 minutes ahead to 24 hours ahead).  It indicates in general that the distribution of forecast errors becomes significantly more spread with the forecast horizon. This supports the notion, unsurprisingly, that it is easier to make accurate forecasts accuracy nearer to real-time.
+
+![error mean_plot](stats/stats_24/results/plots/prob_plot0.png)
+
 The plot below shows the first moment (mean) of the error distribution. For all horizons, the results show negative means. The magnitude of the first moment are relatively small at short horizons, but increase to levels ranging from around $80-120/MWh for horizon intervals beyond 5 hours. 
 
 ![error mean_plot](stats/stats_24/results/plots/prob_plot0.png)
