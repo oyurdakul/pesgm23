@@ -6,8 +6,8 @@ The online companion to the publication
 
 
 This online companion contains
-1. [The historical dispatch levels](#empirical-records-of-storage-dispatch-decisions) of storage resources bidding in the Australian National Electricity Market over a select group of days. These details, along with price forecast errors were sourced from the AEMO NEMWeb data repository ( https://nemweb.com.au/ ) using the data extraction and analysis packages NEMOSIS ( https://github.com/UNSW-CEEM/NEMOSIS ) and NEMSEER ( https://github.com/UNSW-CEEM/NEMSEER ). 
-2. [Statistical test results](#statistical-test-results-on-forecast-errors) on the distribution of the pre-dispatch price forecast errors for different look-ahead periods
+1. [The historical dispatch levels](#empirical-records-of-storage-dispatch-decisions) of storage resources bidding in the Australian National Electricity Market over a select group of days. These details, along with price errors were sourced from the AEMO NEMWeb data repository ( https://nemweb.com.au/ ) using the data extraction and analysis packages NEMOSIS ( https://github.com/UNSW-CEEM/NEMOSIS ) and NEMSEER ( https://github.com/UNSW-CEEM/NEMSEER ). 
+2. [Statistical test results](#statistical-test-results-on-forecast-errors) on the distribution of the pre-dispatch price errors for different look-ahead periods
 3. The [source code](/model), [input data](/input_files), and the [results](/solution_files) of the numerical studies presented in the publication
 
 ## Empirical records of storage dispatch decisions
@@ -42,9 +42,9 @@ Additional secondary case studies of empirical battery discharge, illustrative o
 
 7. 10 Aug 22 in Victoria - A rare price spike during the middle of trading day during which batteries failed to dispatch. The remainder of the trading day had predominatly flat prices.
 
-## Statistical test results on forecast errors
+## Statistical test results on price errors
 
-To ascertain distributional information, a set of statistical tests were conducted on historical price forecast errors. Historical prices, both actual trading prices  and pre-dispatch forecast prices were sourced for the 2019 calender year extracted using NEMOSIS and NEMSEER (as above). Price forecast errors are calculated based on the methodology outlined in the manuscript. 
+To ascertain distributional information, a set of statistical tests were conducted on historical price errors (defined as the actual dispatch price minus the predispatch price, for a given horizon). Historical prices, both actual dispatch prices and pre-dispatch forecast prices were sourced for the 2019 calender year extracted using NEMOSIS and NEMSEER (as above). Price errors are calculated based on the methodology outlined in the manuscript. 
 
 The plot below shows the first moment (mean) of the error distribution. For all horizons, the results show negative means. The magnitude of the first moment are relatively small at short horizons, but increase to levels ranging from around $80-120/MWh for horizon intervals beyond 5 hours. 
 
@@ -54,11 +54,15 @@ The plot below shows the first moment (mean) of the error distribution. For all 
 
 A range of tests have been conducted for normality.  In other words, to understand the distribution of the forecast error with respect to the theoretical quantiles of the standard normal distribution.
 
-Skew and kurtosis - a common measure of normality is to examine the 3rd and 4th moments of the distribution, both of which should be zero for a normal distribution.  
+**Skew and kurtosis** - A common test of normality is to examine the third and fourth moments of the distribution (skew and kurtosis), both of which should be zero for a normal distribution. As indicated in the plots below (skew - left and kurtosis - right) the sample distribution appears negatively skewed with positive kurotisis. The negative skew of the price error is of particular interest - indicating a higher occurence of the actual price being well below predispatch prices when the latter is high.  This supports the notion that the role of predispatch is not to forecast prices, but more accurately serves as a signal of potential scarcity.  In such conditions the high predispatch price would encourage generation resource to come online, thereby depressing the actual price outturn below that signalled by predispatch. The positive kurosis indicates that the distribution may have heavy tails.         
+
 Shapiro-wilk test - a test for normality, for samples greater than 5000 we use the W statistic (rather than p-value) 
 https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.shapiro.html
 Kolmogorov-Smirnov test - which is a distribution agnostic test of the distance between the empirical and proposed distribution https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.kstest.html
+
 We also undertake probability plots to check against normality https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.probplot.html
-In each case it is apparent that the price forecast error of pre-dispatch ahead prices against real time prices is non-normal displaying notable negative skew and kurtosis.  The probability plot is also instructive indicating that normality assumption breaks down particularly at the extreme quantiles.  This overall is not surprising for Predispatch as it is actually meant as a price signal rather than a price-forecast.     In other words, predispatch is intended to signal to participants how to change their behaviour - for example if PD prices are high, it indicates more participants should come in.  Therefore even 30 mins ahead (when units can still committ) we do expect there will be quite significant differences which shows out in the stats.   The fact that the error distribution is fat-tailed and skewed is quite interesting - indicating that it may be easier to forecast prices most of the time, but when forecasts are wrong... they can be really wrong.  This supports the fat tailed nature of electricity prices themselves. 
+In each case it is apparent that the price forecast error of pre-dispatch ahead prices against real time prices is non-normal displaying notable negative skew and kurtosis.
+
+The probability plot is also instructive indicating that normality assumption breaks down particularly at the extreme quantiles.  This overall is not surprising for Predispatch as it is actually meant as a price signal rather than a price-forecast.     In other words, predispatch is intended to signal to participants how to change their behaviour - for example if PD prices are high, it indicates more participants should come in.  Therefore even 30 mins ahead (when units can still committ) we do expect there will be quite significant differences which shows out in the stats.   The fact that the error distribution is fat-tailed and skewed is quite interesting - indicating that it may be easier to forecast prices most of the time, but when forecasts are wrong... they can be really wrong.  This supports the fat tailed nature of electricity prices themselves. 
 
 
