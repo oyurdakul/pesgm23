@@ -48,7 +48,7 @@ To ascertain distributional information, a set of statistical tests were conduct
 
 The sample distribution of price error is shown below for the following horizons: 1 hour, 6 hours, 12 hours and 24 hours. 
 
-![error mean_plot](stats/stats_24/results/pdf_mult.png)
+![error pdf_plot](stats/stats_24/results/pdf_mult.png)
 
 The boxplot of price errors is shown below for all of the considered horizons (from 30 minutes ahead to 24 hours ahead).  It indicates in general that the distribution of forecast errors becomes significantly more spread with the forecast horizon. This supports the notion, unsurprisingly, that it is easier to make accurate forecasts accuracy nearer to real-time.
 
@@ -74,7 +74,7 @@ A range of tests have been conducted for normality.  In other words, to understa
 
 Finaly we also undertake probability plots to check against normality (available at https://github.com/oyurdakul/pesgm23/tree/main/stats/stats_24/results/plots). In each case it is apparent that the price forecast error of pre-dispatch ahead prices against real time prices is non-normal displaying notable negative skew and kurtosis. The probability plot is also instructive indicating that normality assumption breaks down particularly at the extreme quantiles.  An example probability, for a 1 hour ahead horizon is provided below.
 
-![error_sw_ks_test](stats/stats_24/results/plots/prob_plot1.png)
+![error_prob_plot_1_hr](stats/stats_24/results/plots/prob_plot1.png)
 
 The overall results are not surprising for predispatch as it is actually meant as a price signal rather than a price-forecast. In other words, predispatch is intended to signal to participants how to change their behaviour - for example if predispatch prices are high, it indicates more participants should committ into the market.  Therefore even 30 mins ahead (when flexible resources can still committ) we expect there will be significant price errors, which shows out in the statistical analysis. The positive kurtosis, as indicators of heavy tails, suggest it may be easier to forecast prices most of the time, but that signifcant forecast errors are possible in the extreme.
 
@@ -82,8 +82,12 @@ The overall results are not surprising for predispatch as it is actually meant a
 
 Tests have also been run for independence of observations as between forecast horizons. This is indicative of whether a joint distribution is applicable, or whether independent distribution functions can be adopted. 
 
-**Pearson and Spearman-rank correlations with f-test statistics** are provided below. The correlation matrices for both Pearson and Spearman suggest high correlations between adjacent horizons (generally within 1-2 hours of the considered horizon). Beyond such periods, lower correlations are observed.
+**Pearson and Spearman-rank correlation** matrices are provided below for forecast horizons ranging from 0.5 hrs to 24 hrs. Green indicates a correlation of 1.0, yellow indicates a correlation of 0.5 and orange indicates a correlation of 0.  The full data and f-test results are provided at the following location https://github.com/oyurdakul/pesgm23/tree/main/stats/stats_24/results. The correlation matrices for both Pearson and Spearman suggest high correlations between adjacent horizons (generally within 1-2 hours of the considered horizon). Beyond such periods, lower correlations are observed.
+
+![correlations](stats/stats_24/results/correl.png)
 
 **Mutual information tests of dependency** are also conducted with similarly observations that the dependence is significant towards at closer intervals however as the interval between the predispatch horizons expand the dependency reduces.  Once again, this is not surprising because it depends upon the ahead forecasts of system conditions, which can change significantly as new information becomes available closer to time. 
+
+
 
 Overall, based on the statistical analysis, there are two important implications.  First that mulitple statistical tests suggest that the distribution of price errors for the range of considered horizons are statistically different from a normal Gaussian distribution. In particular the potential for extreme deviations suggests that the distributions may have heavier tails.  Second, that there appears to be strong dependence especially for near-to-real-time timeframes and adjacent forecast horizons.  This suggests it may be difficult to justify the use of independent cumulative density functions, cdf (or probability density functions, pdf) for the purposes of modelling storage self-committment. For this reason, we use the sample distribution for the the stochastic parameters of the risk-averse optimization for storage self-commitment. 
