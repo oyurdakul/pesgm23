@@ -44,11 +44,21 @@ Additional secondary case studies of empirical battery discharge, illustrative o
 
 ## Statistical test results on forecast errors
 
-To ascertain distributional information, a set of statistical tests were conducted on historical price forecast errors. Historical prices, both actual trading prices  and pre-dispatch forecast prices were sourced for the 2019 calender year extracted using NEMOSIS and NEMSEER (as above). Price forecast errors are calculated based on the methodology outlined in the manuscript.  
+To ascertain distributional information, a set of statistical tests were conducted on historical price forecast errors. Historical prices, both actual trading prices  and pre-dispatch forecast prices were sourced for the 2019 calender year extracted using NEMOSIS and NEMSEER (as above). Price forecast errors are calculated based on the methodology outlined in the manuscript. 
 
-The plot below
+The plot below shows the first moment (mean) of the error distribution. For all horizons, the results show negative means. The magnitude of the first moment are relatively small at short horizons, but increase to levels ranging from around $80-120/MWh for horizon intervals beyond 5 hours. 
 
-![error_plot_1](stats/stats_24/results/plots/prob_plot0.png)
+![error mean_plot](stats/stats_24/results/plots/prob_plot0.png)
 
-*The distribution of the forecast error with respect to the theoretical quantiles of the standard normal distribution*
+### Normality
+
+A range of tests have been conducted for normality.  In other words, to understand the distribution of the forecast error with respect to the theoretical quantiles of the standard normal distribution.
+
+Skew and kurtosis - a common measure of normality is to examine the 3rd and 4th moments of the distribution, both of which should be zero for a normal distribution.  
+Shapiro-wilk test - a test for normality, for samples greater than 5000 we use the W statistic (rather than p-value) 
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.shapiro.html
+Kolmogorov-Smirnov test - which is a distribution agnostic test of the distance between the empirical and proposed distribution https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.kstest.html
+We also undertake probability plots to check against normality https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.probplot.html
+In each case it is apparent that the price forecast error of pre-dispatch ahead prices against real time prices is non-normal displaying notable negative skew and kurtosis.  The probability plot is also instructive indicating that normality assumption breaks down particularly at the extreme quantiles.  This overall is not surprising for Predispatch as it is actually meant as a price signal rather than a price-forecast.     In other words, predispatch is intended to signal to participants how to change their behaviour - for example if PD prices are high, it indicates more participants should come in.  Therefore even 30 mins ahead (when units can still committ) we do expect there will be quite significant differences which shows out in the stats.   The fact that the error distribution is fat-tailed and skewed is quite interesting - indicating that it may be easier to forecast prices most of the time, but when forecasts are wrong... they can be really wrong.  This supports the fat tailed nature of electricity prices themselves. 
+
 
