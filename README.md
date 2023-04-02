@@ -2,7 +2,7 @@
 The online companion to the publication
 
 > O. Yurdakul and F. Billimoria, "Risk-Averse Self-Scheduling of Storage in Decentralized Markets," 
-> submitted to 2023 IEEE Power & Energy Society General Meeting (PESGM), 2023.
+> in 2023 IEEE Power & Energy Society General Meeting (PESGM), 2023.
 
 
 This online companion contains
